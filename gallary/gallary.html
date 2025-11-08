@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gallery — Allen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container nav-wrap"><h1 class="logo">SENATSOP</h1>
+  <nav><ul class="nav"><li><a href="../index.html">Home</a></li><li><a href="gallery.html" class="active">Gallery</a></li></ul></nav></div></header>
+  <main class="container">
+    <h2>Gallery</h2>
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="graduation">Graduation</button>
+      <button class="filter-btn" data-filter="games">Games</button>
+      <button class="filter-btn" data-filter="friends">Friends</button>
+    </div>
+
+    <div class="masonry-grid">
+      <!-- Graduation (5) -->
+      <div class="gallery-item graduation" data-category="graduation">
+        <img src="assets/graduation1.jpg" alt="Graduation - cap toss" loading="lazy">
+        <div class="item-overlay"><h3>Cap Toss</h3><p>Celebrating the milestone</p></div>
+      </div>
+      <div class="gallery-item graduation" data-category="graduation">
+        <img src="assets/graduation2.jpg" alt="Graduation - family photo" loading="lazy">
+        <div class="item-overlay"><h3>Family Photo</h3><p>Support that matters</p></div>
+      </div>
+      <div class="gallery-item graduation" data-category="graduation">
+        <img src="assets/graduation3.jpg" alt="Graduation - stage" loading="lazy">
+        <div class="item-overlay"><h3>On Stage</h3><p>Receiving diploma</p></div>
+      </div>
+      <div class="gallery-item graduation" data-category="graduation">
+        <img src="assets/graduation4.jpg" alt="Graduation - group" loading="lazy">
+        <div class="item-overlay"><h3>Group Shot</h3><p>Friends & classmates</p></div>
+      </div>
+      <div class="gallery-item graduation" data-category="graduation">
+        <img src="assets/graduation5.jpg" alt="Graduation - celebration" loading="lazy">
+        <div class="item-overlay"><h3>After Party</h3><p>Memories made</p></div>
+      </div>
+
+      <!-- Games (5) -->
+      <div class="gallery-item games" data-category="games">
+        <img src="assets/games1.jpg" alt="Gaming night - setup" loading="lazy">
+        <div class="item-overlay"><h3>Setup</h3><p>Ready for battle</p></div>
+      </div>
+      <div class="gallery-item games" data-category="games">
+        <img src="assets/games2.jpg" alt="Gaming night - team" loading="lazy">
+        <div class="item-overlay"><h3>Team Play</h3><p>Squad goals</p></div>
+      </div>
+      <div class="gallery-item games" data-category="games">
+        <img src="assets/games3.jpg" alt="Gaming tournament" loading="lazy">
+        <div class="item-overlay"><h3>Tournament</h3><p>Competing live</p></div>
+      </div>
+      <div class="gallery-item games" data-category="games">
+        <img src="assets/games4.jpg" alt="Gaming celebration" loading="lazy">
+        <div class="item-overlay"><h3>Victory</h3><p>Celebrating a win</p></div>
+      </div>
+      <div class="gallery-item games" data-category="games">
+        <img src="assets/games5.jpg" alt="Gaming setup 2" loading="lazy">
+        <div class="item-overlay"><h3>LAN Night</h3><p>Long play session</p></div>
+      </div>
+
+      <!-- Friends (5) -->
+      <div class="gallery-item friends" data-category="friends">
+        <img src="assets/friends1.jpg" alt="Friends - hanging out" loading="lazy">
+        <div class="item-overlay"><h3>Hangout</h3><p>Good times</p></div>
+      </div>
+      <div class="gallery-item friends" data-category="friends">
+        <img src="assets/friends2.jpg" alt="Friends - road trip" loading="lazy">
+        <div class="item-overlay"><h3>Road Trip</h3><p>Adventure together</p></div>
+      </div>
+      <div class="gallery-item friends" data-category="friends">
+        <img src="assets/friends3.jpg" alt="Friends - coffee" loading="lazy">
+        <div class="item-overlay"><h3>Coffee Break</h3><p>Chatting away</p></div>
+      </div>
+      <div class="gallery-item friends" data-category="friends">
+        <img src="assets/friends4.jpg" alt="Friends - party" loading="lazy">
+        <div class="item-overlay"><h3>Party Night</h3><p>Dance floor</p></div>
+      </div>
+      <div class="gallery-item friends" data-category="friends">
+        <img src="assets/friends5.jpg" alt="Friends - picnic" loading="lazy">
+        <div class="item-overlay"><h3>Picnic</h3><p>Sunny day</p></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <button class="lightbox-prev">&larr;</button>
+    <button class="lightbox-next">&rarr;</button>
+    <div class="lightbox-content">
+      <img src="" alt="">
+      <div class="lightbox-caption">
+        <h3></h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer"><div class="container"><p>© <span id="year8"></span> Allen</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
