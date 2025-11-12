@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gallery — Allen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container nav-wrap"><h1 class="logo">SENATSOP</h1>
+  <nav><ul class="nav"><li><a href="../index.html">Home</a></li><li><a href="gallery.html" class="active">Gallery</a></li></ul></nav></div></header>
+  <main class="container">
+    <h2>Gallery</h2>
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="graduation">Graduation</button>
+      <button class="filter-btn" data-filter="games">Set up</button>
+      <button class="filter-btn" data-filter="friends">Friends</button>
+    </div>
+
+    <div class="masonry-grid">
+      <!-- Graduation (5) -->
+      <div class="gallery-item graduation" data-category="graduation">
+        <img src="assets/graduation/graduation1.jpg" alt="Graduation - cap toss" loading="lazy">
+        <div class="item-overlay"><h3>Last Photo</h3><p>Celebrating the milestone</p></div>
+      </div>
+      <div class="gallery-item graduation" data-category="graduation">
+        <img src="assets/graduation/graduation2.jpg" alt="Graduation - family photo" loading="lazy">
+        <div class="item-overlay"><h3>Solo Photo</h3><p>I Survived</p></div>
+      </div>
+      <div class="gallery-item graduation" data-category="graduation">
+        <img src="assets/graduation/graduation3.jpg" alt="Graduation - stage" loading="lazy">
+        <div class="item-overlay"><h3>On Stage</h3><p>Receiving diploma</p></div>
+      </div>
+      <div class="gallery-item graduation" data-category="graduation">
+        <img src="assets/graduation/graduation4.jpg" alt="Graduation - group" loading="lazy">
+        <div class="item-overlay"><h3>Memories Made</h3><p>After Party</p></div>
+      </div>
+      <div class="gallery-item graduation" data-category="graduation">
+        <img src="assets/graduation/graduation5.jpg" alt="Graduation - celebration" loading="lazy">
+        <div class="item-overlay"><h3>Group Shot</h3><p>Friends & classmates</p></div>
+      </div>
+
+      <!-- Games (2) -->
+      <div class="gallery-item games" data-category="games">
+        <img src="assets/Games/Setup1.jpg" alt="Gaming night - setup" loading="lazy">
+        <div class="item-overlay"><h3>Meh</h3><p>Project Making</p></div>
+      </div>
+      <div class="gallery-item games" data-category="games">
+        <img src="assets/Games/setup2.jpg" alt="Gaming night - team" loading="lazy">
+        <div class="item-overlay"><h3>NAhh</h3><p>Sakit sa MAta</p></div>
+      </div>
+
+
+      <!-- Friends (5) -->
+      <div class="gallery-item friends" data-category="friends">
+        <img src="assets/Friends/friends1.jpg" alt="Friends - hanging out" loading="lazy">
+        <div class="item-overlay"><h3>Hangout</h3><p>Good times</p></div>
+      </div>
+      <div class="gallery-item friends" data-category="friends">
+        <img src="assets/Friends/friends2.jpg" alt="Friends - road trip" loading="lazy">
+        <div class="item-overlay"><h3>Sport Fest</h3><p>Final Day</p></div>
+      </div>
+      <div class="gallery-item friends" data-category="friends">
+        <img src="assets/Friends/friends3.jpg" alt="Friends - coffee" loading="lazy">
+        <div class="item-overlay"><h3>Grad Ball</h3><p>Chatting away</p></div>
+      </div>
+      <div class="gallery-item friends" data-category="friends">
+        <img src="assets/Friends/friends4.jpg" alt="Friends - party" loading="lazy">
+        <div class="item-overlay"><h3>Exploring</h3><p>Dora's the explorer</p></div>
+      </div>
+      <div class="gallery-item friends" data-category="friends">
+        <img src="assets/Friends/friends5.jpg" alt="Friends - picnic" loading="lazy">
+        <div class="item-overlay"><h3>Graduation Picture</h3><p>Best Day</p></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <button class="lightbox-prev">&larr;</button>
+    <button class="lightbox-next">&rarr;</button>
+    <div class="lightbox-content">
+      <img src="" alt="">
+      <div class="lightbox-caption">
+        <h3></h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer"><div class="container"><p>© <span id="year8"></span> Allen</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
