@@ -27,71 +27,37 @@ body {
 .container { max-width: var(--container); margin: 0 auto; padding: 1.25rem }
 
 /* Header / nav */
-.site-header {
-  background: rgba(7,16,34,0.8);
-  border-bottom: 1px solid rgba(255,255,255,0.02);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  backdrop-filter: blur(12px);
+.site-header{
+    background:transparent;
+    border-bottom:1px solid rgba(255,255,255,0.02)
 }
 
-.nav-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.75rem 0;
+.nav-wrap{display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0.75rem 0
 }
 
-.logo {
-  font-family: Poppins, Inter, sans-serif;
-  font-weight: 600;
-  color: var(--text);
-  margin: 0;
-  opacity: 0;
-  animation: fadeSlideIn 0.5s ease forwards;
+.logo{
+    font-family:Poppins, Inter, sans-serif;
+    font-weight:600;color:var(--text)
+}
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    gap:0.5rem
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 0.5rem;
+nav a{
+    color:var(--muted);
+    text-decoration:none;
+    padding:0.45rem 0.6rem;
+    border-radius:8px;
+    transition:all 160ms ease
 }
-
-nav a {
-  color: var(--muted);
-  text-decoration: none;
-  padding: 0.45rem 0.8rem;
-  border-radius: 8px;
-  transition: all 200ms ease;
-  position: relative;
-  overflow: hidden;
-}
-
-nav a:hover {
-  color: var(--text);
-  background: rgba(255,255,255,0.04);
-}
-
-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg,var(--accent-1),var(--accent-2));
-  transform: translateY(4px);
-  opacity: 0;
-  transition: all 200ms ease;
-}
-
-nav a:hover::after {
-  transform: translateY(0);
-  opacity: 1;
-}
+nav a.active,nav a:hover{color:var(--text);background:rgba(255,255,255,0.02)}
 
 /* Project content */
 main {

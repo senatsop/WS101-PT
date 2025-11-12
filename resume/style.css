@@ -9,7 +9,8 @@
     --accent-end: #60a5fa;   
     --glass: rgba(255,255,255,0.04);
     --radius: 12px;
-    --container: 800px;
+    /* match main site container for consistent header width */
+    --container: 1100px;
     --shadow: 0 6px 18px rgba(2,6,23,0.6);
 }
 
@@ -60,12 +61,7 @@ body::before {
     padding:0.75rem 0
 }
 
-.logo{
-    font-family: Poppins, Inter, sans-serif;
-    font-weight: 600;
-    margin: 0;
-    color: var(--text);
-}
+
 
 nav ul{
     list-style:none;
@@ -84,11 +80,8 @@ nav a{
     transition:all 180ms ease
 }
 
-nav a:hover,
-nav a:focus,
-nav a.active{
-    color:var(--text);
-    background:rgba(255,255,255,0.02);
+nav a:hover,nav a:focus{
+    color:var(--text);background:rgba(255,255,255,0.02);
     outline:none
 }
 

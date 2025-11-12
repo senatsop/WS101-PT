@@ -41,7 +41,10 @@ body::before {
 	z-index: -1;
 }
 
-.container{max-width:var(--container);margin:0 auto;padding:1rem}
+.container{
+    max-width:var(--container);
+    margin:0 auto;padding:1rem
+}
 
 
 .site-header{

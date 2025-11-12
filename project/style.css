@@ -24,48 +24,44 @@ body {
   line-height: 1.5;
 }
 
-.container { max-width: var(--container); margin: 0 auto; padding: 1.25rem }
+.container{
+    max-width:var(--container);
+    margin:0 auto;
+    padding:1rem
+}
 
 /* Header / nav */
-.site-header {
-  background: transparent;
-  border-bottom: 1px solid rgba(255,255,255,0.02);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  backdrop-filter: blur(12px);
-}
-.nav-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.75rem 0;
-}
-.logo {
-  font-family: Poppins, Inter, sans-serif;
-  font-weight: 600;
-  color: var(--text);
-  margin: 0;
+.site-header{
+    background:transparent;
+    border-bottom:1px solid rgba(255,255,255,0.02)
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 0.5rem;
+.nav-wrap{display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0.75rem 0
 }
-nav a {
-  color: var(--muted);
-  text-decoration: none;
-  padding: 0.45rem 0.6rem;
-  border-radius: 8px;
-  transition: all 160ms ease;
+
+.logo{
+    font-family:Poppins, Inter, sans-serif;
+    font-weight:600;color:var(--text)
 }
-nav a:hover {
-  color: var(--text);
-  background: rgba(255,255,255,0.02);
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    gap:0.5rem
 }
+
+nav a{
+    color:var(--muted);
+    text-decoration:none;
+    padding:0.45rem 0.6rem;
+    border-radius:8px;
+    transition:all 160ms ease
+}
+nav a.active,nav a:hover{color:var(--text);background:rgba(255,255,255,0.02)}
 
 /* Project content */
 main {

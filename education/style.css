@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap');
 
 :root{
-	--bg:#0b1220;
+    /* use same background as skills page */
+    --bg: #071022;
 	--surface:#0f1724;
 	--muted:#9fb0c8;
 	--text:#e9f2fb;
@@ -17,24 +18,26 @@
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
-	margin:0;
-	font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
-	background: linear-gradient(180deg,var(--bg),#071026 60%);
-	color:var(--text);
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
+    margin:0;
+    font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    /* use same gradient stop as about page for matching look */
+    background: linear-gradient(180deg,var(--bg),#061021 60%);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
 }
 
 .container{
     max-width:var(--container);
     margin:0 auto;
-    padding:1.25rem
+    padding:1rem
 }
 
 .site-header{
     background:transparent;
     border-bottom:1px solid rgba(255,255,255,0.02)
 }
+
 
 .nav-wrap{
     display:flex;
