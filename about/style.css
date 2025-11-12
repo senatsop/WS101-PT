@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap');
 
 :root{
-    /* use same background as skills page */
-    --bg: #071022; 
+    /* match education background and layout variables */
+    --bg: #071022;
     --card: #121826;
     --muted: #94a3b8;
     --text: #e6eef8;
     --accent-start: #7dd3fc;
-    --accent-end: #60a5fa;   
+    --accent-end: #60a5fa;
     --glass: rgba(255,255,255,0.04);
     --radius: 12px;
-    --container: 800px;
+    --container: 1000px;
     --shadow: 0 6px 18px rgba(2,6,23,0.6);
-	--radius:12px;
-	--container:980px;
 }
 
 *{box-sizing:border-box}
